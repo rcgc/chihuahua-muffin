@@ -1,10 +1,11 @@
-""""
+"""
     - Will rename files in folders
     - Will generate train, validation and test datasets
 """
 import os, shutil, pathlib
 
 
+# renames instances
 def rename_images(folder_name, image_prefix, image_extension):
     folder = r'./'+folder_name+'/'
     count = 1
@@ -32,8 +33,26 @@ def rename_images(folder_name, image_prefix, image_extension):
     print(res)
 
 
-# Rename corresponding folders
+# creates subsets
+def make_subset(category, subset_name, start_index, end_index):
+    original_dir = pathlib.Path(category)
+    new_base_dir = pathlib.Path("chihuahua_vs_muffin")
+
+    dir = new_base_dir / subset_name / category
+    os.makedirs(dir)
+    fnames = [f"{category}_{i}.JPG" for i in range(start_index, end_index)]
+    for fname in fnames:
+        shutil.copyfile(src=original_dir / fname, dst=dir / fname)
+
+
+# Folder name, imageName, imageFormat
 # rename_images("Muffins", "muffin_", ".JPG")
 # rename_images("Chihuahuas", "chihuahua_", ".JPG")
 
 # Create training, validation and test dataset
+make_subset("chihuahua", "train", 1, 51)
+make_subset("chihuahua", "validation", 51, 76)
+make_subset("chihuahua", "test", 76, 101)
+make_subset("muffin", "train", 1, 51)
+make_subset("muffin", "validation", 51, 76)
+make_subset("muffin", "test", 76, 101)
