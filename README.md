@@ -26,7 +26,7 @@ To tackle this kind of problems we will use a Convolutional Neural Network (CNN)
 
 ## Materials and methods
 ## Results
-## Duscusion
+## Discusion
 ## Limitations
 ## References
 [1]Chollet, F., 2022. Deep Learning With Python. 2nd ed. Greenwich, USA: Manning Publications.<br>
