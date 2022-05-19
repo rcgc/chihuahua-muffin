@@ -7,12 +7,12 @@ Very similar objects recognition is not a new task for humans at all, because in
 ## Introduction
 As we pointed out in the abstract, our objective is to classify very similar objects that belong to very different contexts. Due to the wide range of knwon (and unknown) examples we will focus on one of the most popular cases: The chihuahua-muffin problem.<br>
 
-To tackle this kind of problems we will use a Convolutional Neural Network architecture known as VGG19 by setting up its configuration parameters in a similar way as Ph.D Togootogtokh and Ph.D Amartuvshin did it in their paper "Deep Learning Approach for Very Similar Objects Recognition Application on Chihuahua and Muffin Problem"[2]. Therefore, this implementation has been inspired in the work of Ph.D Togootogtokh and Ph.D Amartuvshin, all credits to their work you can find in arxiv.org.
+To tackle this kind of problems we will use a Convolutional Neural Network architecture known as VGG19 by setting up its configuration parameters in a similar way as Ph.D Togootogtokh and Ph.D Amartuvshin did it in their paper "Deep Learning Approach for Very Similar Objects Recognition Application on Chihuahua and Muffin Problem"[2]. Therefore, this implementation has been inspired in the work of Ph.D Togootogtokh and Ph.D Amartuvshin, all credits to their work that you can find in arxiv.org.
 
 ## Materials and methods
 ## Results
 ## Duscusion
 ## Limitations
 ## References
-[1]Chollet, F., 2022. Deep Learning With Python. 2nd ed. Greenwich, USA: Manning Publications.
+[1]Chollet, F., 2022. Deep Learning With Python. 2nd ed. Greenwich, USA: Manning Publications.<br>
 [2]E. Togootogtokh and A. Amartuvshin, "Deep Learning Approach for Very Similar Objects Recognition Application on Chihuahua and Muffin Problem", arXiv, 2018. Available: https://arxiv.org/abs/1801.09573. [Accessed 19 May 2022].
