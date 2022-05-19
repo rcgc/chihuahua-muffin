@@ -61,8 +61,8 @@ conv_base = VGG19(include_top=False,
 model = models.Sequential()
 model.add(conv_base)
 model.add(layers.Flatten())
-model.add(layers.Dense(1000))
-model.add(layers.Dense(128, activation="softmax"))
+model.add(layers.Dense(128))
+model.add(layers.Dense(2, activation="softmax"))
 model.add(layers.Dense(1, activation="sigmoid"))
 
 print(model.summary())
@@ -70,13 +70,13 @@ print(model.summary())
 conv_base.trainable = False
 
 model.compile(
-    loss="categorical_crossentropy",
+    loss="binary_crossentropy",
     optimizer=optimizers.Adagrad(),
     metrics=['acc']
 )
 
-n_training_images = 100
-n_validation_images = 50
+n_training_images = 200
+n_validation_images = 120
 batch_size = 10
 
 n_steps_epoch = n_training_images / batch_size
@@ -85,7 +85,7 @@ n_validation_steps = n_validation_images / batch_size
 history = model.fit(
     train_generator,
     steps_per_epoch=n_steps_epoch,
-    epochs=25,
+    epochs=50,
     validation_data=validation_generator,
     validation_steps=n_validation_steps)
 
@@ -116,10 +116,10 @@ test_datagen = ImageDataGenerator(1./255)
 test_generator = test_datagen.flow_from_directory(
     test_dir,
     target_size=(112, 112),
-    batch_size=25,
+    batch_size=10,
     class_mode="binary")
 
-test_loss, test_acc = model.evaluate(test_generator, steps=25)
-print("\ntest acc :\n", test_acc)
+test_loss, test_acc = model.evaluate(test_generator, steps=n_steps_epoch)
+print("\ntest acc :", test_acc)
 
 plt.show()

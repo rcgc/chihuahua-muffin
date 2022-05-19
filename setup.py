@@ -46,13 +46,13 @@ def make_subset(category, subset_name, start_index, end_index):
 
 
 # Folder name, imageName, imageFormat
-# rename_images("Muffins", "muffin_", ".JPG")
-# rename_images("Chihuahuas", "chihuahua_", ".JPG")
+# rename_images("muffin", "muffin_", ".JPG")
+# rename_images("chihuahua", "chihuahua_", ".JPG")
 
 # Create training, validation and test dataset
-make_subset("chihuahua", "train", 1, 51)
-make_subset("chihuahua", "validation", 51, 76)
-make_subset("chihuahua", "test", 76, 101)
-make_subset("muffin", "train", 1, 51)
-make_subset("muffin", "validation", 51, 76)
-make_subset("muffin", "test", 76, 101)
+make_subset("chihuahua", "train", 1, 201)
+make_subset("chihuahua", "validation", 201, 321)
+make_subset("chihuahua", "test", 321, 401)
+make_subset("muffin", "train", 1, 201)
+make_subset("muffin", "validation", 201, 321)
+make_subset("muffin", "test", 321, 401)
