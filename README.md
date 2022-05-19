@@ -25,9 +25,23 @@ As we pointed out in the abstract, our objective is to classify very similar obj
 To tackle this kind of problems we will use a Convolutional Neural Network (CNN) architecture known as VGG19 by setting up its configuration parameters in a similar way as Ph.D Togootogtokh and Ph.D Amartuvshin did it in their paper "Deep Learning Approach for Very Similar Objects Recognition Application on Chihuahua and Muffin Problem"[2]. Therefore, this implementation has been inspired in the work of both professors, all credits to them, they proposed this state-of-the-art solution in 2018 which can be found in <a href="https://arxiv.org/abs/1801.09573">arxiv.org</a>.
 
 ## Materials and methods
+### Convolutional Neural Networks
+#### VGG19
+#### Loss function
+#### Optimizers
+
+### Transfer Learning
+#### Feature extraction
+#### Data augmentation
+
+### Dataset
+
 ## Results
+
 ## Discusion
+
 ## Limitations
+
 ## References
 [1]Chollet, F., 2022. Deep Learning With Python. 2nd ed. Greenwich, USA: Manning Publications.<br>
 [2]S. Gettle, "CAMOUFLAGE IN NATURE - Steve Gettle Nature Photography", Steve Gettle Nature Photography, 2022. [Online]. Available: http://stevegettle.com/2008/10/08/camouflage-in-nature/. [Accessed: 19- May- 2022].<br>
