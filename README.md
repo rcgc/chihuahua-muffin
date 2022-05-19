@@ -27,7 +27,7 @@ To tackle this kind of problems we will use a Convolutional Neural Network (CNN)
 ## Materials and methods
 ### Convolutional Neural Networks
 #### VGG19
-#### Loss function
+#### Loss functions
 #### Optimizers
 
 ### Transfer Learning
