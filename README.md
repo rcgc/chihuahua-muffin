@@ -28,7 +28,7 @@ To tackle this kind of problems we will use a Convolutional Neural Network (CNN)
 ## Neural networks
 Deep learning is a specific subfield of machine learning: a new take on learning representations from data that puts an emphasis on learning successive layers of increasingly meaningful representations. In deep learning, these layered representations are learned via models called neural networks, structured in literal layers stacked on top of each other.<br><br>
 
-Nowadays, there are numerous neural network architectures aimed at different purposes. However, as mentioned in the abstract we will focus only in convolutional neural networks because of the effectiveness achieved in classification tasks.<br><br>
+Nowadays, there are numerous neural network architectures aimed at different purposes. However, as mentioned in the abstract we will focus only in Convolutional Neural Networks (Deep Convolutional Networks in the diagram) because of the effectiveness achieved in classification tasks.<br><br>
 
 ![nn_architectures](https://github.com/rcgc/chihuahua-muffin/blob/master/readme_images/nn_architectures.jpeg)
 <p><b>Figure 6. </b>Neural Networks Architectures[5]</p><br>
