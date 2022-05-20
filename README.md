@@ -25,7 +25,17 @@ As we pointed out in the abstract, our objective is to classify very similar obj
 To tackle this kind of problems we will use a Convolutional Neural Network (CNN) architecture known as VGG19 by setting up its configuration parameters in a similar way as Ph.D Togootogtokh and Ph.D Amartuvshin did it in their paper "Deep Learning Approach for Very Similar Objects Recognition Application on Chihuahua and Muffin Problem"[2]. Therefore, this implementation has been inspired in the work of both professors, all credits to them, they proposed this state-of-the-art solution in 2018 which can be found in <a href="https://arxiv.org/abs/1801.09573">arxiv.org</a>.
 
 ## Materials and methods
+## Neural networks
+Deep learning is a specific subfield of machine learning: a new take on learning representations from data that puts an emphasis on learning successive layers of increasingly meaningful representations. In deep learning, these layered representations are learned via models called neural networks, structured in literal layers stacked on top of each other.<br><br>
+
+Nowadays, there are numerous neural network architectures aimed at different purposes. However, as mentioned in the abstract we will focus only in convolutional neural networks because of the effectiveness achieved in classification tasks.<br><br>
+
+![nn_architectures](https://github.com/rcgc/chihuahua-muffin/blob/master/readme_images/nn_architectures.jpeg)
+<p><b>Figure 5. </b>Neural Networks Architectures[5]</p><br>
+
 ### Convolutional Neural Networks
+
+
 #### VGG19
 #### Loss functions
 #### Optimizers
@@ -47,3 +57,4 @@ To tackle this kind of problems we will use a Convolutional Neural Network (CNN)
 [2]S. Gettle, "CAMOUFLAGE IN NATURE - Steve Gettle Nature Photography", Steve Gettle Nature Photography, 2022. [Online]. Available: http://stevegettle.com/2008/10/08/camouflage-in-nature/. [Accessed: 19- May- 2022].<br>
 [3]A. Gri, "Puppies Or Food? 12 Pics That Will Make You Question Reality", Bored Panda, 2022. [Online]. Available: https://www.boredpanda.com/dog-food-comparison-bagel-muffin-lookalike-teenybiscuit-karen-zack/?utm_source=google&utm_medium=organic&utm_campaign=organic. [Accessed: 19- May- 2022].<br>
 [4]E. Togootogtokh and A. Amartuvshin, "Deep Learning Approach for Very Similar Objects Recognition Application on Chihuahua and Muffin Problem", arXiv, 2018. Available: https://arxiv.org/abs/1801.09573. [Accessed 19 May 2022].
+[5]"Neural Networks: Chapter 6 - Neural Architectures", Chronicles of AI, 2022. [Online]. Available: https://chroniclesofai.com/neural-networks-chapter-6-neural-architectures/. [Accessed: 20- May- 2022].
