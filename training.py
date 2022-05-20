@@ -75,8 +75,8 @@ model.compile(
     metrics=['acc']
 )
 
-n_training_images = 200
-n_validation_images = 120
+n_training_images = 250
+n_validation_images = 150
 batch_size = 10
 
 n_steps_epoch = n_training_images / batch_size
