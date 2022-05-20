@@ -31,10 +31,16 @@ Deep learning is a specific subfield of machine learning: a new take on learning
 Nowadays, there are numerous neural network architectures aimed at different purposes. However, as mentioned in the abstract we will focus only in convolutional neural networks because of the effectiveness achieved in classification tasks.<br><br>
 
 ![nn_architectures](https://github.com/rcgc/chihuahua-muffin/blob/master/readme_images/nn_architectures.jpeg)
-<p><b>Figure 5. </b>Neural Networks Architectures[5]</p><br>
+<p><b>Figure 6. </b>Neural Networks Architectures[5]</p><br>
 
 ### Convolutional Neural Networks
+A Convolutional Neural Network (CNN) characterizes by convolution layers which learn local patterns—in the case of images, patterns found in small 2D windows of the inputs. Thus, convolutions work by sliding these windows of size 3 × 3 or 5 × 5 over the 3D input feature map, stopping at every possible location, and extracting the 3D patch of surrounding features. Where feature map can be understood as follows: every dimension in the depth axis is a feature. <br><br>
 
+![how_convolution_works](https://github.com/rcgc/chihuahua-muffin/blob/master/readme_images/how_convolution_works.png)
+<p><b>Figure 7. </b>How convolution works[1]</p><br>
+
+![cnn_diagram](https://github.com/rcgc/chihuahua-muffin/blob/master/readme_images/CNN_diagram.png)
+<p><b>Figure 7. </b>CNN diagram, VGG16 Architecture[1]</p><br>
 
 #### VGG19
 #### Loss functions
