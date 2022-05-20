@@ -40,7 +40,7 @@ A Convolutional Neural Network (CNN) characterizes by convolution layers which l
 <p><b>Figure 7. </b>How convolution works[1]</p><br>
 
 ![cnn_diagram](https://github.com/rcgc/chihuahua-muffin/blob/master/readme_images/CNN_diagram.png)
-<p><b>Figure 7. </b>CNN diagram, VGG16 Architecture[1]</p><br>
+<p><b>Figure 8. </b>CNN diagram, VGG16 Architecture[1]</p><br>
 
 #### VGG19
 #### Loss functions
