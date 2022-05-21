@@ -45,7 +45,7 @@ A Convolutional Neural Network (CNN) characterizes by convolution layers which l
 #### VGG19
 Created by the Visual Geometry Group at Oxford's this architecture uses some ideas from it's predecessors (AlexNet) and improves them in a significant way that, in 2014 it out-shined other state of the art models and is still preferred for a lot of challenging problems[6].<br><br>
 
-VGG19 is a variant of VGG model which in short consists of 19 layers (16 convolution layers, 3 Fully connected layers, 5 MaxPool layers and 1 SoftMax layer). There are other variants of VGG like VGG11, VGG16 and others. VGG19 has 19.6 billion Floating Operations (FLOPs)[6]. The main purpose for which VGG was designed was to win ImageNet Large-Scale Visual Recognition Challenge (ILSVRC).<br><br>
+VGG19 is a variant of VGG model which in short consists of 19 layers (16 convolution layers, 3 Fully connected layers, 5 MaxPool layers and 1 SoftMax layer). There are other variants of VGG like VGG11, VGG16 and others. VGG19 has 19.6 billion Floating Operations (FLOPs). The main purpose for which VGG was designed was to win ImageNet Large-Scale Visual Recognition Challenge (ILSVRC)[6].<br><br>
 
 ![vgg19_architecture](https://github.com/rcgc/chihuahua-muffin/blob/master/readme_images/vgg19_example.png)
 <p><b>Figure 9. </b>VGG19 Architecture[7]</p><br>
@@ -56,7 +56,7 @@ VGG19 is a variant of VGG model which in short consists of 19 layers (16 convolu
 - Spatial padding was used to preserve the spatial resolution of the image.
 - Max pooling was performed over a 2 * 2 pixel windows with sride 2.
 - This was followed by Rectified linear unit(ReLu) to introduce non-linearity to make the model classify better and to improve computational time as the previous models used tanh or sigmoid functions this proved much better than those.
-- Implemented three fully connected layers from which first two were of size 4096 and after that a layer with 1000 channels for 1000-way ILSVRC classification and the final layer is a softmax function.<br><br>
+- Implemented three fully connected layers from which first two were of size 4096 and after that a layer with 1000 channels for 1000-way ILSVRC classification and the final layer is a softmax function[6].<br><br>
 
 #### Loss functions
 #### Optimizers
