@@ -50,6 +50,8 @@ VGG19 is a variant of VGG model which in short consists of 19 layers (16 convolu
 ![vgg19_architecture](https://github.com/rcgc/chihuahua-muffin/blob/master/readme_images/vgg19_example.png)
 <p><b>Figure 9. </b>VGG19 Architecture[7]</p><br>
 
+Brief explanation of how the VGG19 architecture works:<br>
+
 - A fixed size of (224 * 224) RGB image was given as input to this network which means that the matrix was of shape (224,224,3).
 - The only preprocessing that was done is that they subtracted the mean RGB value from each pixel, computed over the whole training set.
 - Used kernels of (3 * 3) size with a stride size of 1 pixel, this enabled them to cover the whole notion of the image.
