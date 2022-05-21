@@ -43,7 +43,7 @@ A Convolutional Neural Network (CNN) characterizes by convolution layers which l
 <p><b>Figure 8. </b>CNN diagram example, VGG16 Architecture[1]</p><br>
 
 #### VGG19
-Created by the Visual Geometry Group at Oxford's this architecture uses some ideas from it's predecessors (AlexNet) and improves them in a significant way that, in 2014 it out-shined other state of the art models and is still preferred for a lot of challenging problems[6].<br><br>
+Created by the Visual Geometry Group at Oxford's this architecture uses some ideas from it's predecessors (AlexNet) and improves them in a significant way that, in 2014 it out-shined other state of the art models and is still preferred for a lot of challenging problems[6].<br>
 
 VGG19 is a variant of VGG model which in short consists of 19 layers (16 convolution layers, 3 Fully connected layers, 5 MaxPool layers and 1 SoftMax layer). There are other variants of VGG like VGG11, VGG16 and others. VGG19 has 19.6 billion Floating Operations (FLOPs). The main purpose for which VGG was designed was to win ImageNet Large-Scale Visual Recognition Challenge (ILSVRC)[6].<br><br>
 
