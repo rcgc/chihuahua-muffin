@@ -43,6 +43,21 @@ A Convolutional Neural Network (CNN) characterizes by convolution layers which l
 <p><b>Figure 8. </b>CNN diagram example, VGG16 Architecture[1]</p><br>
 
 #### VGG19
+Created by the Visual Geometry Group at Oxford's this architecture uses some ideas from it's predecessors (AlexNet) and improves them in a significant way that, in 2014 it out-shined other state of the art models and is still preferred for a lot of challenging problems[6].<br><br>
+
+VGG19 is a variant of VGG model which in short consists of 19 layers (16 convolution layers, 3 Fully connected layers, 5 MaxPool layers and 1 SoftMax layer). There are other variants of VGG like VGG11, VGG16 and others. VGG19 has 19.6 billion Floating Operations (FLOPs)[6]. The main purpose for which VGG was designed was to win ImageNet Large-Scale Visual Recognition Challenge (ILSVRC).<br><br>
+
+![vgg19_architecture](https://github.com/rcgc/chihuahua-muffin/blob/master/readme_images/vgg19_example.png)
+<p><b>Figure 9. </b>VGG19 Architecture[7]</p><br>
+
+- A fixed size of (224 * 224) RGB image was given as input to this network which means that the matrix was of shape (224,224,3).
+- The only preprocessing that was done is that they subtracted the mean RGB value from each pixel, computed over the whole training set.
+- Used kernels of (3 * 3) size with a stride size of 1 pixel, this enabled them to cover the whole notion of the image.
+- Spatial padding was used to preserve the spatial resolution of the image.
+- Max pooling was performed over a 2 * 2 pixel windows with sride 2.
+- This was followed by Rectified linear unit(ReLu) to introduce non-linearity to make the model classify better and to improve computational time as the previous models used tanh or sigmoid functions this proved much better than those.
+- Implemented three fully connected layers from which first two were of size 4096 and after that a layer with 1000 channels for 1000-way ILSVRC classification and the final layer is a softmax function.<br><br>
+
 #### Loss functions
 #### Optimizers
 
@@ -64,3 +79,5 @@ A Convolutional Neural Network (CNN) characterizes by convolution layers which l
 [3]A. Gri, "Puppies Or Food? 12 Pics That Will Make You Question Reality", Bored Panda, 2022. [Online]. Available: https://www.boredpanda.com/dog-food-comparison-bagel-muffin-lookalike-teenybiscuit-karen-zack/?utm_source=google&utm_medium=organic&utm_campaign=organic. [Accessed: 19- May- 2022].<br>
 [4]E. Togootogtokh and A. Amartuvshin, "Deep Learning Approach for Very Similar Objects Recognition Application on Chihuahua and Muffin Problem", arXiv, 2018. Available: https://arxiv.org/abs/1801.09573. [Accessed 19 May 2022].
 [5]"Neural Networks: Chapter 6 - Neural Architectures", Chronicles of AI, 2022. [Online]. Available: https://chroniclesofai.com/neural-networks-chapter-6-neural-architectures/. [Accessed: 20- May- 2022].
+[6]A. Kaushik, "Understanding the VGG19 Architecture", OpenGenus IQ: Computing Expertise & Legacy, 2022. [Online]. Available: https://iq.opengenus.org/vgg19-architecture/. [Accessed: 21- May- 2022].
+[7]Y. Zheng, C. Yang and A. Merkulov, "Breast cancer screening using convolutional neural network and follow-up digital mammography", Computational Imaging III, 2018. Available: 10.1117/12.2304564 [Accessed 21 May 2022].
