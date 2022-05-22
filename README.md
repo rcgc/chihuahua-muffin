@@ -67,6 +67,12 @@ Takes the predictions of the network and the true target (what you wanted the ne
 <p><b>Figure 10. </b>Loss functions table[1]</p><br>
 
 #### Optimizers
+Determines how the network will be updated based on the loss function. It implements a specific variant of stochastic gradient descent (SGD). These are the common used optimizers:<br>
+
+- SGD (with o without momentum)
+- RMSprop
+- Adam
+- Adagrad
 
 ### Transfer Learning
 #### Feature extraction
