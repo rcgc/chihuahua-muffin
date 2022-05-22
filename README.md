@@ -127,7 +127,7 @@ All images used for this project belong to third party sources such as:
 [4]E. Togootogtokh and A. Amartuvshin, "Deep Learning Approach for Very Similar Objects Recognition Application on Chihuahua and Muffin Problem", arXiv, 2018. Available: https://arxiv.org/abs/1801.09573. [Accessed 19 May 2022].<br>
 [5]"Neural Networks: Chapter 6 - Neural Architectures", Chronicles of AI, 2022. [Online]. Available: https://chroniclesofai.com/neural-networks-chapter-6-neural-architectures/. [Accessed: 20- May- 2022].<br>
 [6]A. Kaushik, "Understanding the VGG19 Architecture", OpenGenus IQ: Computing Expertise & Legacy, 2022. [Online]. Available: https://iq.opengenus.org/vgg19-architecture/. [Accessed: 21- May- 2022].<br>
-[7]Y. Zheng, C. Yang and A. Merkulov, "Breast cancer screening using convolutional neural network and follow-up digital mammography", Computational Imaging III, 2018. Available: 10.1117/12.2304564 [Accessed 21 May 2022].
-[8]K. Shah, "A Quick Overview to the Transfer Learning and it’s Significance in Real World Applications", Medium, 2022. [Online]. Available: https://medium.com/towards-tech-intelligence/a-quick-overview-to-the-transfer-learning-and-its-significance-in-real-world-applications-790fb57debad. [Accessed: 22- May- 2022].
-[9] Oxford Pet Animal Dataset. http://www.robots.ox.ac.uk/~vgg/data/pets/
+[7]Y. Zheng, C. Yang and A. Merkulov, "Breast cancer screening using convolutional neural network and follow-up digital mammography", Computational Imaging III, 2018. Available: 10.1117/12.2304564 [Accessed 21 May 2022].<br>
+[8]K. Shah, "A Quick Overview to the Transfer Learning and it’s Significance in Real World Applications", Medium, 2022. [Online]. Available: https://medium.com/towards-tech-intelligence/a-quick-overview-to-the-transfer-learning-and-its-significance-in-real-world-applications-790fb57debad. [Accessed: 22- May- 2022].<br>
+[9] Oxford Pet Animal Dataset. http://www.robots.ox.ac.uk/~vgg/data/pets/ <br>
 [10] IMAGENET. http://www.image-net.org/
