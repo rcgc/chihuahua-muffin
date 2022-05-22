@@ -82,7 +82,17 @@ Determines how the network will be updated based on the loss function. It implem
 <br>
 
 ### Transfer Learning
+Focuses on the knowledge gained from previous Machine Learning systems which will be used for another one to learn how to solve similar tasks that will include partially o completely different data[8].<br>
+
+![transfer_learning](https://github.com/rcgc/chihuahua-muffin/blob/master/readme_images/transfer_learning.png)
+<p><b>Figure 10. </b>Transfer learning diagram[8]</p><br>
+
 #### Feature extraction
+Feature extraction consists of using the representations learned by a previously trained model to extract interesting features from new samples. These features are then run through a new classifier, which is trained from scratch[1].<br><br>
+
+![feature_extraction](https://github.com/rcgc/chihuahua-muffin/blob/master/readme_images/feature_Extraction.png)
+<p><b>Figure 11. </b>Feature extraction[1]</p><br>
+
 #### Data augmentation
 
 ### Dataset
@@ -101,3 +111,4 @@ Determines how the network will be updated based on the loss function. It implem
 [5]"Neural Networks: Chapter 6 - Neural Architectures", Chronicles of AI, 2022. [Online]. Available: https://chroniclesofai.com/neural-networks-chapter-6-neural-architectures/. [Accessed: 20- May- 2022].<br>
 [6]A. Kaushik, "Understanding the VGG19 Architecture", OpenGenus IQ: Computing Expertise & Legacy, 2022. [Online]. Available: https://iq.opengenus.org/vgg19-architecture/. [Accessed: 21- May- 2022].<br>
 [7]Y. Zheng, C. Yang and A. Merkulov, "Breast cancer screening using convolutional neural network and follow-up digital mammography", Computational Imaging III, 2018. Available: 10.1117/12.2304564 [Accessed 21 May 2022].
+[8]K. Shah, "A Quick Overview to the Transfer Learning and it’s Significance in Real World Applications", Medium, 2022. [Online]. Available: https://medium.com/towards-tech-intelligence/a-quick-overview-to-the-transfer-learning-and-its-significance-in-real-world-applications-790fb57debad. [Accessed: 22- May- 2022].
