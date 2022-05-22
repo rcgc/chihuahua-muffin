@@ -61,6 +61,11 @@ Brief explanation of how the VGG19 architecture works:<br>
 - Implemented three fully connected layers from which first two were of size 4096 and after that a layer with 1000 channels for 1000-way ILSVRC classification and the final layer is a softmax function[6].<br><br>
 
 #### Loss functions
+Takes the predictions of the network and the true target (what you wanted the network to output) and computes a distance score, capturing how well the network has done on a specific example. According to the type of problem to be solved, binary_crossentropy is the option due to the fact that only two classes will be predicted "Chihuahua" or "Muffin".<br>
+
+![loss_functions_table](https://github.com/rcgc/chihuahua-muffin/blob/master/readme_images/loss_functions_table.JPG)
+<p><b>Figure 10. </b>Loss functions table[1]</p><br>
+
 #### Optimizers
 
 ### Transfer Learning
