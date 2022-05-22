@@ -70,7 +70,7 @@ Takes the predictions of the network and the true target (what you wanted the ne
 - KLDivergence
 - CosineSimilarity
 
-According to the type of problem to be solved, binary_crossentropy is the option due to the fact that only two classes will be predicted "Chihuahua" or "Muffin".<br>
+According to the type of problem to be solved, binary_crossentropy is the option due to the fact that only two classes will be predicted "Chihuahua" or "Muffin".<br><br>
 
 #### Optimizers
 Determines how the network will be updated based on the loss function. It implements a specific variant of stochastic gradient descent (SGD). These are the common used optimizers:<br>
@@ -79,6 +79,7 @@ Determines how the network will be updated based on the loss function. It implem
 - RMSprop
 - Adam
 - Adagrad
+<br>
 
 ### Transfer Learning
 #### Feature extraction
