@@ -94,8 +94,25 @@ Feature extraction consists of using the representations learned by a previously
 <p><b>Figure 11. </b>Feature extraction[1]</p><br>
 
 #### Data augmentation
+This technique consists of getting more instences from an image dataset by doing transformations[1] such as:
+
+- rotation
+- zoom in / zoom out
+- crop
+- grayscale
+- flip
+<br>
 
 ### Dataset
+All images used for this project belong to third party sources such as:
+- <a href="https://storage.googleapis.com/openimages/web/index.html"> Open Images </a>
+- <a href="https://www.robots.ox.ac.uk/~vgg/data/pets/"> Oxford's pets dataset </a>
+- <a href="https://www.kaggle.com/competitions/imagenet-object-localization-challenge/data?select=imagenet_object_localization_patched2019.tar.gz"> Imagenet dataset </a>
+- <a href="https://stock.adobe.com/mx/search?k=muffin"> adobe stock </a>
+- <a href="https://www.istockphoto.com/es/search/2/image?istockcollection=main%2Cvalue&mediatype=photography&page=1&phrase=muffin"> istock photo </a>
+- <a href="https://www.gettyimages.com.mx/fotos/muffin?assettype=image&page=1&phrase=muffin&sort=mostpopular&license=rf,rm"> getty images </a>
+- <a href="https://www.pexels.com/search/muffin/"> pexels </a>
+- <a href="https://unsplash.com/s/photos/muffin"> unsplash </a>
 
 ## Results
 
