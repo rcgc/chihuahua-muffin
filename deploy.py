@@ -4,7 +4,7 @@ import numpy as np
 from tensorflow.keras.preprocessing import image
 
 
-def predict_image_class(category, id):
+def predict_image_class(model, class_labels_map, category, id):
     img_path = f"./{category}/{category}_{id}.JPG"
     # img_path = "./readme_images/camouflaged_owl.jpg"
     plt.figure()
@@ -18,4 +18,10 @@ def predict_image_class(category, id):
 
     img_preprocessed = np.vstack([x])
 
-    return img_preprocessed
+    predictions = model.predict(img_preprocessed)
+    print("\nProbabilities : ", predictions)
+
+    max_index_probability = np.argmax(predictions)
+    print("\nPredicted : ", list(class_labels_map.keys())[list(class_labels_map.values()).index(max_index_probability)])
+
+    plt.show(block=False)

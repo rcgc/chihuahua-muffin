@@ -90,7 +90,7 @@ n_validation_steps = n_validation_images / batch_size
 history = model.fit(
     train_generator,
     steps_per_epoch=n_steps_epoch,
-    epochs=40,
+    epochs=4,
     validation_data=validation_generator,
     validation_steps=n_validation_steps)
 
@@ -115,7 +115,7 @@ plt.plot(epochs, val_loss, 'orange', label='validation loss')
 plt.title('train loss vs val loss')
 plt.legend()
 
-# plt.show(block=False)
+plt.show(block=False)
 
 test_datagen = ImageDataGenerator(1./255)
 test_generator = test_datagen.flow_from_directory(
@@ -130,14 +130,49 @@ print("\ntest acc :", test_acc)
 class_labels_map = train_generator.class_indices
 print("\nClasses : ", class_labels_map)
 
+folder_id = 2
+folder_name = ""
+instance_id = 0
+
 # 1 - 900 chihuahua
 # 1 - 500  muffin
 
-img_preprocessed = deploy.predict_image_class("chihuahua", "232")
-predictions = model.predict(img_preprocessed)
-print("\nProbabilities : ", predictions)
+while folder_id != 0:
+    print("Choose an option: ")
+    print("2) Muffin")
+    print("1) Chihuahua")
+    print("0) Exit")
+    folder_id = int(input())
 
-max_index_probability = np.argmax(predictions)
-print("\nPredicted : ", list(class_labels_map.keys())[list(class_labels_map.values()).index(max_index_probability)])
+    if folder_id == 2:
+        folder_name = "muffin"
+        print("Valid id's for muffins 1-500")
+        instance_id = input()
+        casted_instance_id = int(instance_id)
+        if 1 <= casted_instance_id <= 900:
+            deploy.predict_image_class(model, class_labels_map, folder_name, instance_id)
+        else:
+            print("Choose a valid instance id!")
+    elif folder_id == 1:
+        folder_name = "chihuahua"
+        print("Valid id's for chihuahuas 1-900")
+        instance_id = input()
+        casted_instance_id = int(instance_id)
+        if 1 <= casted_instance_id <= 500:
+            deploy.predict_image_class(model, class_labels_map, folder_name, instance_id)
+        else:
+            print("Choose a valid instance id!")
+    elif folder_id == 0:
+        break
+    else:
+        print("Choose a valid option!")
 
 plt.show()
+
+# Suggested queries:
+
+# chihuahua_232
+# muffin_138
+
+# chihuahua 241
+# muffin 433
