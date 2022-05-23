@@ -85,7 +85,7 @@ n_validation_steps = n_validation_images / batch_size
 history = model.fit(
     train_generator,
     steps_per_epoch=n_steps_epoch,
-    epochs=40,
+    epochs=100,
     validation_data=validation_generator,
     validation_steps=n_validation_steps)
 
