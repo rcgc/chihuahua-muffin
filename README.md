@@ -147,11 +147,11 @@ NOTE: 2 extra graphs will appear before querying, that's because of the accuracy
 <p><b>Figure 15. </b>Training and validation loss after 100 epochs</p><br>
 
 ### Testing accuracy and loss
-![Test_accuracy_and_loss](https://github.com/rcgc/chihuahua-muffin/blob/master/readme_images/testAcc_87.png)
+![Test_accuracy_and_loss](https://github.com/rcgc/chihuahua-muffin/blob/master/readme_images/testAcc_93.png)
 <p><b>Figure 16. </b>Test accuracy and loss</p><br>
 
 ## Discusion
-As we saw training accuracy and validation accuracy have reached 95% (sometimes this percentage is bigger) and test accuracy reached 88%. In addition, these metrics could vary depending on the combination of loss functions, new dataset instances, changing the number of neurons in the very last layers, etc.<br>
+As we saw training accuracy and validation accuracy have reached around 93% and 97% respectively (sometimes this percentage is bigger) and test accuracy reached 94%. In addition, these metrics could vary depending on the combination of loss functions, new dataset instances, changing the number of neurons in the very last layers, etc.<br>
 
 On the other hand, it has been a wise decision to use data augmentation to tackle this kind of problems because according to the papaer an accuracy of 95% has been reached as well, such percentage means that this very specific problem has been solved, this small project demonstrates the advantages in time and efficiency achieved by the implementation of transfer learning techniques. <br>
 
