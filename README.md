@@ -52,7 +52,7 @@ VGG19 is a variant of VGG model which in short consists of 19 layers (16 convolu
 
 Brief explanation of how the VGG19 architecture works:<br>
 
-- A fixed size of (224 * 224) RGB image was given as input to this network which means that the matrix was of shape (224,224,3).
+- A fixed size of (224 * 224 originally, but for this project will be 112 * 112) RGB image was given as input to this network which means that the matrix was of shape (224,224,3).
 - The only preprocessing that was done is that they subtracted the mean RGB value from each pixel, computed over the whole training set.
 - Used kernels of (3 * 3) size with a stride size of 1 pixel, this enabled them to cover the whole notion of the image.
 - Spatial padding was used to preserve the spatial resolution of the image.
