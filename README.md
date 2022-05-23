@@ -133,8 +133,12 @@ All images used for this project belong to third party sources such as:
 <p><b>Figure 15. </b>Test accuracy and loss</p><br>
 
 ## Discusion
+As we saw training accuracy and validation accuracy have reached 95% (sometimes this percentage is bigger) and test accuracy reached 88%. In addition, these metrics could vary depending on the combination of loss functions, new dataset instances, changing the number of neurons in the very last layers, etc.<br>
+
+On the other hand, it has been a wise decision to use data augmentation to tackle this kind of problems because according to the papaer an accuracy of 95% has been reached as well, such percentage means that this very specific problem has been solved, this small project demonstrates the advantages in time and efficiency achieved by the implementation of transfer learning techniques. <br>
 
 ## Limitations
+Since we have solved only one very especific case of this type of problems by analyzing 1000 images (500 chihuahuas and 500 muffins), it cannot be concluded that we will always get such accuracy percentages for this kind of problems: dataset instaces, computing resources, and so on, have a big influence in the final results.<br>
 
 ## References
 [1]Chollet, F., 2022. Deep Learning With Python. 2nd ed. Greenwich, USA: Manning Publications.<br>
