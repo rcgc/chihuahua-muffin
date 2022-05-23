@@ -118,6 +118,20 @@ All images used for this project belong to third party sources such as:
 - <a href="https://unsplash.com/s/photos/muffin" target="_blank"> unsplash </a>
 
 ### How to use it
+- `python setup.py` : creates chihuahua_vs_muffin folder which contains test, train and validation datasets
+- `training.py` : trains the CNN, saves the model in vgg19_chihuahua_vs_muffin.h5, and queries the model
+
+#### Querying the model
+- Choose a folder: 
+  - 2) Muffin folder
+  - 1) Chihuahua folder
+  - 0) Exit from program
+ 
+- Enter a valid instance id 
+  - 1-500 for muffin 
+  - 1-900 for chihuahua
+<br>
+
 
 ## Results
 ### Training and validation accuracy
