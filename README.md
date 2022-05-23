@@ -91,7 +91,7 @@ Focuses on the knowledge gained from previous Machine Learning systems which wil
 Feature extraction consists of using the representations learned by a previously trained model to extract interesting features from new samples. These features are then run through a new classifier, which is trained from scratch[1].<br><br>
 
 ![feature_extraction](https://github.com/rcgc/chihuahua-muffin/blob/master/readme_images/feature_Extraction.png)
-<p><b>Figure 11. </b>Feature extraction[1]</p><br>
+<p><b>Figure 11. </b>How feature extraction[1]</p><br>
 
 #### Data augmentation
 This technique consists of getting more instances from an image dataset by doing transformations[1] such as:
