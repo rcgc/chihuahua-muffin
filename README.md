@@ -117,6 +117,8 @@ All images used for this project belong to third party sources such as:
 - <a href="https://www.pexels.com/search/muffin/" target="_blank"> pexels </a>
 - <a href="https://unsplash.com/s/photos/muffin" target="_blank"> unsplash </a>
 
+### How to use it
+
 ## Results
 ### Training and validation accuracy
 ![Training_and_validation_accuracy](https://github.com/rcgc/chihuahua-muffin/blob/master/readme_images/trainAcc_vs_valAcc.png)
