@@ -1,11 +1,15 @@
 import os
 import matplotlib.pyplot as plt
-from tensorflow.keras import models
+from keras.models import Model
 from tensorflow.keras import layers
 from tensorflow.keras.applications import VGG19
 from tensorflow.keras.utils import image_dataset_from_directory
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 from tensorflow.keras import optimizers
+from tensorflow.keras.applications.resnet50 import preprocess_input, decode_predictions
+from tensorflow.keras.layers import Dense, GlobalAveragePooling2D, Dropout
+import numpy as np
+import deploy
 
 
 base_dir = "chihuahua_vs_muffin"
@@ -58,19 +62,20 @@ conv_base = VGG19(include_top=False,
                   weights="imagenet",
                   input_shape=(112, 112, 3))
 
-model = models.Sequential()
-model.add(conv_base)
-model.add(layers.Flatten())
-model.add(layers.Dense(128))
-model.add(layers.Dense(2, activation="softmax"))
-model.add(layers.Dense(1, activation="sigmoid"))
+z = conv_base.output
+z = Dense(128)(z)
+z = GlobalAveragePooling2D()(z)
+z = Dropout(0.3)(z)
+predictions = Dense(2, activation="softmax")(z)
 
-print(model.summary())
+model = Model(inputs=conv_base.input, outputs=predictions)
+
+# print(model.summary())
 
 conv_base.trainable = False
 
 model.compile(
-    loss="binary_crossentropy",
+    loss="sparse_categorical_crossentropy",
     optimizer=optimizers.Adagrad(),
     metrics=['acc']
 )
@@ -85,7 +90,7 @@ n_validation_steps = n_validation_images / batch_size
 history = model.fit(
     train_generator,
     steps_per_epoch=n_steps_epoch,
-    epochs=100,
+    epochs=40,
     validation_data=validation_generator,
     validation_steps=n_validation_steps)
 
@@ -121,5 +126,18 @@ test_generator = test_datagen.flow_from_directory(
 
 test_loss, test_acc = model.evaluate(test_generator, steps=n_steps_epoch)
 print("\ntest acc :", test_acc)
+
+class_labels_map = train_generator.class_indices
+print("\nClasses : ", class_labels_map)
+
+# 1 - 900 chihuahua
+# 1 - 500  muffin
+
+img_preprocessed = deploy.predict_image_class("chihuahua", "232")
+predictions = model.predict(img_preprocessed)
+print("\nProbabilities : ", predictions)
+
+max_index_probability = np.argmax(predictions)
+print("\nPredicted : ", list(class_labels_map.keys())[list(class_labels_map.values()).index(max_index_probability)])
 
 plt.show()
