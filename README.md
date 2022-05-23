@@ -135,6 +135,8 @@ All images used for this project belong to third party sources such as:
 ![Querying_model](https://github.com/rcgc/chihuahua-muffin/blob/master/readme_images/querying_model.png)
 <p><b>Figure 13. </b>Querying the model after 4 epochs</p><br>
 
+NOTE: 2 extra graphs will appear before querying, that's because of the accuracy metrics shown in the following sections.<br><br>
+
 ## Results
 ### Training and validation accuracy
 ![Training_and_validation_accuracy](https://github.com/rcgc/chihuahua-muffin/blob/master/readme_images/trainAcc_vs_valAcc.png)
