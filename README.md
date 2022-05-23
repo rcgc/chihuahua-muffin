@@ -104,7 +104,7 @@ This technique consists of getting more instances from an image dataset by doing
 <br>
 
 ![data_augmentation_example](https://github.com/rcgc/chihuahua-muffin/blob/master/readme_images/data_augmentation_example.png)
-<p><b>Figure 11. </b>Data augmentation example[1]</p><br>
+<p><b>Figure 12. </b>Data augmentation example[1]</p><br>
 
 ### Dataset
 All images used for this project belong to third party sources such as:
