@@ -118,6 +118,17 @@ All images used for this project belong to third party sources such as:
 - <a href="https://unsplash.com/s/photos/muffin" target="_blank"> unsplash </a>
 
 ## Results
+### Training and validation accuracy
+![Training_and_validation_accuracy](https://github.com/rcgc/chihuahua-muffin/blob/master/readme_images/trainAcc_vs_valAcc.png)
+<p><b>Figure 13. </b>Training and validation accuracy after 100 epochs</p><br>
+
+### Training and validation loss
+![Training_and_validation_loss](https://github.com/rcgc/chihuahua-muffin/blob/master/readme_images/trainLoss_vs_valLoss.png)
+<p><b>Figure 14. </b>Training and validation loss after 100 epochs</p><br>
+
+### Testing accuracy and loss
+![Test_accuracy_and_loss](https://github.com/rcgc/chihuahua-muffin/blob/master/readme_images/testAcc_87.png)
+<p><b>Figure 15. </b>Test accuracy and loss</p><br>
 
 ## Discusion
 
