@@ -132,19 +132,21 @@ All images used for this project belong to third party sources such as:
   - 1-900 for chihuahua
 <br>
 
+![Querying_model](https://github.com/rcgc/chihuahua-muffin/blob/master/readme_images/querying_model.png)
+<p><b>Figure 13. </b>Querying the model after 4 epochs</p><br>
 
 ## Results
 ### Training and validation accuracy
 ![Training_and_validation_accuracy](https://github.com/rcgc/chihuahua-muffin/blob/master/readme_images/trainAcc_vs_valAcc.png)
-<p><b>Figure 13. </b>Training and validation accuracy after 100 epochs</p><br>
+<p><b>Figure 14. </b>Training and validation accuracy after 100 epochs</p><br>
 
 ### Training and validation loss
 ![Training_and_validation_loss](https://github.com/rcgc/chihuahua-muffin/blob/master/readme_images/trainLoss_vs_valLoss.png)
-<p><b>Figure 14. </b>Training and validation loss after 100 epochs</p><br>
+<p><b>Figure 15. </b>Training and validation loss after 100 epochs</p><br>
 
 ### Testing accuracy and loss
 ![Test_accuracy_and_loss](https://github.com/rcgc/chihuahua-muffin/blob/master/readme_images/testAcc_87.png)
-<p><b>Figure 15. </b>Test accuracy and loss</p><br>
+<p><b>Figure 16. </b>Test accuracy and loss</p><br>
 
 ## Discusion
 As we saw training accuracy and validation accuracy have reached 95% (sometimes this percentage is bigger) and test accuracy reached 88%. In addition, these metrics could vary depending on the combination of loss functions, new dataset instances, changing the number of neurons in the very last layers, etc.<br>
