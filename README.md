@@ -27,7 +27,7 @@ As we pointed out in the abstract, our objective is to classify very similar obj
 To tackle this kind of problems we will use a Convolutional Neural Network (CNN) architecture known as VGG19 by setting up its configuration parameters in a similar way as Ph.D Togootogtokh and Ph.D Amartuvshin did it in their paper "Deep Learning Approach for Very Similar Objects Recognition Application on Chihuahua and Muffin Problem"[2]. Therefore, this implementation has been inspired in the work of both professors, all credits to them, they proposed this state-of-the-art solution in 2018 which can be found in <a href="https://arxiv.org/abs/1801.09573">arxiv.org</a>.
 
 ## Materials and methods
-## Neural networks
+### Neural networks
 Deep learning is a specific subfield of machine learning: a new take on learning representations from data that puts an emphasis on learning successive layers of increasingly meaningful representations. In deep learning, these layered representations are learned via models called neural networks, structured in literal layers stacked on top of each other.<br><br>
 
 Nowadays, there are numerous neural network architectures aimed at different purposes. However, as mentioned in the abstract we will focus only in Convolutional Neural Networks (Deep Convolutional Networks in the diagram) because of the effectiveness achieved in classification tasks.<br><br>
