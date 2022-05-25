@@ -1,5 +1,8 @@
 # Chihuahua and muffin problem: very similar objects recognition
 ## Abstract
+Image recognition and classification has been a complex problem to solve using tehcnology. Deep learning architectures such as Convolutional Neural Networks (CNN) have demonstrated to achieve a high performance accuracy in such tasks. In the present project will be demonstrated how transfer learning techniques such as feature extraction and data augmentation tackle this kind of problems when complexity increases in classificacion of very similar images belonging to completely different contexts.<br><br>
+
+## Introduction
 Since the 2010’s-decade deep learning field progressed taking giant steps at always expected tasks such as object classification, speech recognition, text-written processing, image generation, etc. AI competitions such as the “Imagenet challenge” led to convolutional architectures became so popular when solving object recognition and classification problems, this is because of the accuracy levels reached, from around 70% in 2011 to more than 95% (better than humans even!) in 2015[1].<br><br>
 
 ![Camouflaged_owl](https://github.com/rcgc/chihuahua-muffin/blob/master/readme_images/camouflaged_owl.jpg)
@@ -19,7 +22,6 @@ Very similar objects recognition is not a new task for humans at all, because in
 ![Chihuahua_vs_muffin](https://github.com/rcgc/chihuahua-muffin/blob/master/readme_images/chihuahua_vs_muffin.jpg)
 <p><b>Figure 5. </b>Chihuahua vs muffin[2]</p><br>
 
-## Introduction
 As we pointed out in the abstract, our objective is to classify very similar objects that belong to very different contexts. Due to the wide range of knwon (and unknown) examples we will focus on one of the most popular cases: The chihuahua-muffin problem.<br>
 
 To tackle this kind of problems we will use a Convolutional Neural Network (CNN) architecture known as VGG19 by setting up its configuration parameters in a similar way as Ph.D Togootogtokh and Ph.D Amartuvshin did it in their paper "Deep Learning Approach for Very Similar Objects Recognition Application on Chihuahua and Muffin Problem"[2]. Therefore, this implementation has been inspired in the work of both professors, all credits to them, they proposed this state-of-the-art solution in 2018 which can be found in <a href="https://arxiv.org/abs/1801.09573">arxiv.org</a>.
