@@ -138,7 +138,7 @@ All images used for this project belong to third party sources such as:
 <p><b>Figure 13. </b>Querying the model after 4 epochs</p><br>
 
 NOTE #1: 2 extra graphs will appear before querying, that's because of the accuracy metrics shown in the following sections.<br><br>
-NOTE #2: To run keras with GPU in Windows you will have to setup some configurations (running this program in CPU will be super slow), I would recommend follow this tutorial: https://lifewithdata.com/2022/01/16/how-to-install-tensorflow-and-keras-with-gpu-support-on-windows/
+NOTE #2: To run keras with GPU in Windows you will have to setup some configurations (running this program in CPU will be super slow), I would recommend to follow this tutorial: https://lifewithdata.com/2022/01/16/how-to-install-tensorflow-and-keras-with-gpu-support-on-windows/
 
 ## Results
 ### Training and validation accuracy
