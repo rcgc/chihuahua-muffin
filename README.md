@@ -22,7 +22,7 @@ Very similar objects recognition is not a new task for humans at all, because in
 ![Chihuahua_vs_muffin](https://github.com/rcgc/chihuahua-muffin/blob/master/readme_images/chihuahua_vs_muffin.jpg)
 <p><b>Figure 5. </b>Chihuahua vs muffin[2]</p><br>
 
-As we pointed out in the abstract, our objective is to classify very similar objects that belong to very different contexts. Due to the wide range of knwon (and unknown) examples we will focus on one of the most popular cases: The chihuahua-muffin problem.<br>
+As we pointed out in the abstract, our objective is to classify very similar objects that belong to very different contexts. Due to the wide range of known (and unknown) examples we will focus on one of the most popular cases: The chihuahua-muffin problem.<br>
 
 To tackle this kind of problems we will use a Convolutional Neural Network (CNN) architecture known as VGG19 by setting up its configuration parameters in a similar way as Ph.D Togootogtokh and Ph.D Amartuvshin did it in their paper "Deep Learning Approach for Very Similar Objects Recognition Application on Chihuahua and Muffin Problem"[2]. Therefore, this implementation has been inspired in the work of both professors, all credits to them, they proposed this state-of-the-art solution in 2018 which can be found in <a href="https://arxiv.org/abs/1801.09573">arxiv.org</a>.
 
